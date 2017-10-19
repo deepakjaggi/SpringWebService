@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.controller","com.impls","com.config"})
+@ComponentScan(basePackages = {"com.controller","com.impls"})
 public class Run {
 
 	public static void main(String[] args) {
