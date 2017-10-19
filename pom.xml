@@ -59,5 +59,18 @@
 		</plugins>
 	</build>
 
+	<distributionManagement>
+		<repository>
+			<id>ArtifactoryDefault</id>
+			<name>cicd-art-agt1-releases</name>
+			<url>http://10.78.19.20:443/artifactory/Maven-Internal-Releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>ArtifactoryDefault</id>
+			<name>cicd-art-agt1-snapshots</name>
+			<url>http://10.78.19.20:443/artifactory/Maven-Internal-Snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 
 </project>
