@@ -1,5 +1,6 @@
 package com.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,13 +15,20 @@ import com.model.AddResponse;
 @RequestMapping(value = "/business")
 public class ControllerDwo
 {
-	Ecomm ecomm=new Ecomm();
-
+	@Autowired
+	Ecomm ecomm;
+	
+	
+	@RequestMapping(value = "/health", method = RequestMethod.GET)
+	public ResponseEntity<String> checkhealth()
+	{
+		return new ResponseEntity<String>("Hello", HttpStatus.OK);	
+	}
+		
 	@RequestMapping(value = "/addEcomm", produces = "application/json", consumes = "application/json", method = RequestMethod.POST)
 	public ResponseEntity<AddResponse> addEcomm(@RequestBody AddRequest addRequest)
 	{
 		AddResponse response = ecomm.add(addRequest);
 		return new ResponseEntity<AddResponse>(response, HttpStatus.ACCEPTED);
 	}
-
 }
