@@ -1,4 +1,4 @@
-package com.controller;
+package no.vipps.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.impls.Ecomm;
-import com.model.AddRequest;
-import com.model.AddResponse;
+import no.vipps.demo.impl.Ecomm;
+import no.vipps.demo.model.AddRequest;
+import no.vipps.demo.model.AddResponse;
 
 @org.springframework.stereotype.Controller
 public class ControllerDwo

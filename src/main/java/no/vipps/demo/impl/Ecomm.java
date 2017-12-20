@@ -1,9 +1,9 @@
-package com.impls;
+package no.vipps.demo.impl;
 
 import org.springframework.stereotype.Component;
 
-import com.model.AddRequest;
-import com.model.AddResponse;
+import no.vipps.demo.model.AddRequest;
+import no.vipps.demo.model.AddResponse;
 
 @Component
 public class Ecomm
