@@ -12,7 +12,6 @@ import com.model.AddRequest;
 import com.model.AddResponse;
 
 @org.springframework.stereotype.Controller
-@RequestMapping(value = "/business")
 public class ControllerDwo
 {
 	@Autowired
@@ -25,7 +24,7 @@ public class ControllerDwo
 		return new ResponseEntity<String>("Hello", HttpStatus.OK);	
 	}
 		
-	@RequestMapping(value = "/addEcomm", produces = "application/json", consumes = "application/json", method = RequestMethod.POST)
+	@RequestMapping(value = "/business/addEcomm", produces = "application/json", consumes = "application/json", method = RequestMethod.POST)
 	public ResponseEntity<AddResponse> addEcomm(@RequestBody AddRequest addRequest)
 	{
 		AddResponse response = ecomm.add(addRequest);
