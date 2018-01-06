@@ -28,7 +28,7 @@ public class MakePaymentImpl
 		{
 			Random rand=new Random();			
 			makePayment.setErrorCode("9000");
-			makePayment.setErrorCode("Success");
+			makePayment.setErrorMessage("Success");
 			makePayment.setTxnID(Integer.toString(rand.nextInt(100000000)));			
 		}
 		return makePayment;	
