@@ -1,0 +1,7 @@
+{
+    "mobileNumber": "",
+    "pin": "4309",
+    "token": "",
+    "errorCode": "9001",
+    "errorMessage": "Mobile Number can not be blank"
+}
