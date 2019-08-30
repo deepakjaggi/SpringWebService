@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 import no.vipps.demo.model.MakePayment;
 
+
 @Component
 public class MakePaymentImpl
 {

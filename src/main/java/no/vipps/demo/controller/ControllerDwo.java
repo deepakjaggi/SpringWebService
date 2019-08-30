@@ -15,6 +15,8 @@ import no.vipps.demo.impl.MakePaymentImpl;
 import no.vipps.demo.model.Login;
 import no.vipps.demo.model.MakePayment;
 
+
+
 //@org.springframework.stereotype.Controller
 @RestController
 public class ControllerDwo
