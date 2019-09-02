@@ -30,7 +30,7 @@ public class ControllerDwo
 	@RequestMapping(value = "/health", method = RequestMethod.GET)
 	public ResponseEntity<String> checkhealth()
 	{
-		return new ResponseEntity<String>("Hello from Jenkins", HttpStatus.OK);	
+		return new ResponseEntity<String>("Hello from Jenkins 2", HttpStatus.OK);	
 	}	
 	
 	@GetMapping("/helloWithAge/{age}")
