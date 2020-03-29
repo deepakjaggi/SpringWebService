@@ -6,7 +6,8 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 @SpringBootApplication(scanBasePackages = {"no.vipps"})
-public class Run extends SpringBootServletInitializer {
+public class Run extends SpringBootServletInitializer 
+{
 	
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application)
