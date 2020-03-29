@@ -27,10 +27,12 @@ public class ControllerDwo
 	@Autowired
 	MakePaymentImpl makePaymentImpl;
 	
-	@RequestMapping(value = "/health", method = RequestMethod.GET)
+	@RequestMapping(value = "/health", produces = "application/json", method = RequestMethod.GET)
+	
 	public ResponseEntity<String> checkhealth()
 	{
-		return new ResponseEntity<String>("Hello Manisha", HttpStatus.OK);	
+		return new ResponseEntity<String>("HelloManisha", HttpStatus.OK);	
+		//return new ResponseEntity<Health>(healthImpl.getHealthMessage(health),HttpStatus.ACCEPTED);
 	}	
 	
 	@GetMapping("/helloWithAge/{age}")
