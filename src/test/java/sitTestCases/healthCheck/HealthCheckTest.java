@@ -10,7 +10,7 @@ import common.CommonTestMethods;
 import junit.framework.Assert;
 
 
-public class HealthCheck {
+public class HealthCheckTest {
 
 	@Test
 	public void test() 
